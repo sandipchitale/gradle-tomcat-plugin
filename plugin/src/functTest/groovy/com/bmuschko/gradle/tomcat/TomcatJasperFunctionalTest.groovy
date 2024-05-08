@@ -38,7 +38,7 @@ class TomcatJasperFunctionalTest extends AbstractFunctionalTest {
         assertCompiledJsps(outputDir)
 
         where:
-        tomcatVersion << [TomcatVersion.VERSION_6_0_X, TomcatVersion.VERSION_7_0_X, TomcatVersion.VERSION_8_0_X, TomcatVersion.VERSION_8_5_X, TomcatVersion.VERSION_9_0_X]
+        tomcatVersion << [TomcatVersion.VERSION_6_0_X, TomcatVersion.VERSION_7_0_X, TomcatVersion.VERSION_8_0_X, TomcatVersion.VERSION_8_5_X, TomcatVersion.VERSION_9_0_X,TomcatVersion.VERSION_10_0_X]
     }
 
     /**
@@ -230,7 +230,7 @@ class TomcatJasperFunctionalTest extends AbstractFunctionalTest {
         assertCompiledJsps(outputDir)
 
         where:
-        tomcatVersion << [TomcatVersion.VERSION_6_0_X, TomcatVersion.VERSION_7_0_X, TomcatVersion.VERSION_8_0_X, TomcatVersion.VERSION_8_5_X, TomcatVersion.VERSION_9_0_X]
+        tomcatVersion << [TomcatVersion.VERSION_6_0_X, TomcatVersion.VERSION_7_0_X, TomcatVersion.VERSION_8_0_X, TomcatVersion.VERSION_8_5_X, TomcatVersion.VERSION_9_0_X, TomcatVersion.VERSION_10_0_X]
     }
 
     static void createJspFiles(File targetDir) {

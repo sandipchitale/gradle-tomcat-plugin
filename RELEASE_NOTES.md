@@ -1,4 +1,9 @@
-### Version 2.7.0 (June 29, 2021)
+### Version 2.4 (November 4, 2017)
+
+* Add Tomcat 10.x support.
+* Upgrade to Gradle Wrapper 7.6.3.
+* 
+* ### Version 2.7.0 (June 29, 2021)
 
 * Add jspFiles and failOnError parameter for passing to the jspc ant task - [Pull Request 195](https://github.com/bmuschko/gradle-tomcat-plugin/pull/195).
 

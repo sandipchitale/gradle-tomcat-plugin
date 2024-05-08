@@ -7,5 +7,6 @@ dependencies {
             project(':tomcat7x'),
             project(':tomcat8x'),
             project(':tomcat85x'),
-            project(':tomcat9x')
+            project(':tomcat9x'),
+            project(':tomcat10x')
 }

@@ -25,10 +25,16 @@ subprojects {
     }
 
     dependencies {
-        testImplementation('org.spockframework:spock-core:1.2-groovy-2.5') {
+        testImplementation('org.spockframework:spock-core:2.0-groovy-3.0') {
             exclude group: 'org.codehaus.groovy'
         }
         testImplementation 'org.apache.commons:commons-lang3:3.3'
+        testImplementation 'junit:junit:4.11'
+    }
+
+    // Spock 2 is based on JUnit Platform which needs to be enabled explicitly.
+    tasks.withType(Test).configureEach {
+        useJUnitPlatform()
     }
 }
 

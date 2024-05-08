@@ -1,0 +1,9 @@
+dependencies {
+    def tomcatVersion = '10.1.18'
+
+    implementation project(':embedded'),
+            "org.apache.tomcat:tomcat-catalina:${tomcatVersion}",
+            "org.apache.tomcat:tomcat-coyote:${tomcatVersion}",
+            "org.apache.tomcat:tomcat-jasper:${tomcatVersion}"
+    testImplementation project(path: ':embedded', configuration: 'integTestFixtures')
+}
